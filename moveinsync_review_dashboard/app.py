@@ -502,7 +502,7 @@ if should_refresh:
             with st.spinner("Analyzing new reviews with AI..."):
                 successful, failed = analyze_pending_reviews(
                     batch_size=3,
-                    max_reviews=30,
+                    max_reviews=150,
                 )
 
             st.info(
